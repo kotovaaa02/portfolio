@@ -1,0 +1,39 @@
+@use '../../Style/ImportStyle.scss' as import;
+
+.OurTeam {
+    .OurTeam__container {
+        width: calc(100vw - 144px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.OurTeam__description {
+    background: #E9DCDD;
+    padding:4.7% 5.9% 7.33% 4%;
+    width: 50%;
+    &--number {
+        .OurTeam__number--style {
+            @include import.WorkSansMedium(120px, #000000);
+        }
+    }
+    &--content {
+        margin-top: 10%;
+        display: flex;
+        justify-content: flex-end   ;
+        .qweq {
+            width: 75%;
+        }
+    }
+
+}
+.OurTeam__preview {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--text {
+        @include import.WorkSansExtraLight(20px, #000000);
+    }
+}

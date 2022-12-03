@@ -1,0 +1,14 @@
+@use '../../../Style/ImportStyle.scss' as import;
+
+.TitleText__title {
+    .TitleText__title--h3 {
+        @include import.WorkSansMedium(48px, #000000);
+    }
+}
+
+.TitleText__text {
+    .TitleText__text--p {
+        @include import.WorkSansExtraLight(20px, #000000);
+    }
+}
+

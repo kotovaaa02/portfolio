@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;500;600;700&display=swap');
+
+@mixin WorkSansLight($fs,$color) {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: $fs;
+    line-height: 1.5;
+    color: $color;
+}
+
+@mixin WorkSansExtraLight($fs,$color) {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: $fs;
+    line-height: 1.5;
+    color: $color;
+}
+
+@mixin WorkSansMedium($fs,$color) {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fs;
+    line-height: 1.5;
+    color: $color;
+}
