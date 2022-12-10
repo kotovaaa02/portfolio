@@ -1,0 +1,17 @@
+@use '../../Style/ImportStyle.scss' as import;
+
+.FooterItem {
+    margin: 10vh 0 0 0;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    &--content {
+        border-bottom: 1px solid #000000;
+        padding: 0 0 25px 0;
+        display: flex;
+        justify-content: center;
+        &__text {
+            @include import.WorkSansExtraLight(25px,#000000)
+        }
+    }
+}

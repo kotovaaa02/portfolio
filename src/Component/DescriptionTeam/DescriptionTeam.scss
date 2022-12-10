@@ -1,0 +1,30 @@
+@use '../../Style/ImportStyle.scss' as import;
+
+.DescriptionTeam {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100vw - 15%);
+        margin: 0 auto;
+        .DescriptionTeam__title {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            &--style {
+                @include import.WorkSansMedium(48px, #000000)
+            }
+        }
+
+        .DescriptionTeam--content {
+            width: 560px;
+            .DescriptionTeam--item {
+                margin: 0 0 62px 0;
+            }
+        }
+
+    }
+}

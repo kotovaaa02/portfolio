@@ -4,11 +4,29 @@
     .TitleText__title--h3 {
         @include import.WorkSansMedium(48px, #000000);
     }
+    .TitleText__title--light{
+        @include import.WorkSansExtraLight(32px, #000000);
+    }
+    &--right{
+        display: flex;
+        justify-content: flex-end;
+        .TitleText__title--h3 {
+            @include import.WorkSansMedium(48px, #000000);
+        }
+        .TitleText__title--light{
+            @include import.WorkSansExtraLight(32px, #000000);
+        }
+    }
 }
 
 .TitleText__text {
     .TitleText__text--p {
         @include import.WorkSansExtraLight(20px, #000000);
+    }
+    .TitleText__text--right{
+        text-align: end;
+        @include import.WorkSansExtraLight(20px, #000000);
+
     }
 }
 
