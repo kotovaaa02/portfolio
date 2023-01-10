@@ -1,0 +1,57 @@
+@use '../../Style/ImportStyle.scss' as import;
+.NumberedTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 286px;
+    .NumberedTitle__block{
+        &--num{
+            @include import.WorkSansMedium(64px,#FFFFFF)
+
+        }
+        &--description{
+            @include import.WorkSansExtraLight(32px,#FFFFFF)
+
+        }
+    }
+}
+
+
+
+.Mission{
+    display: flex;
+    justify-content: space-between;
+    &__title{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--style{
+            @include import.WorkSansMedium(48px,#000000)
+        }
+    }
+    &__content{
+        padding: 70px;
+        width: 67%;
+        background-image: url(../../Resources//bgMission.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+.Mission__content--item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Mission__item--description{
+        width: 52%;
+        .Mission__description--text{
+            @include import.WorkSansExtraLight(20px,#FFFFFF)
+
+        }
+    }
+
+}
+
